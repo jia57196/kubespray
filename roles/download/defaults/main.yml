@@ -304,7 +304,7 @@ nodelocaldns_image_repo: "{{ kube_image_repo }}/k8s-dns-node-cache"
 nodelocaldns_image_tag: "{{ nodelocaldns_version }}"
 
 dnsautoscaler_version: 1.6.0
-dnsautoscaler_image_repo: "k8s.gcr.azk8s.cn/cluster-proportional-autoscaler-{{ image_arch }}"
+dnsautoscaler_image_repo: "gcr.azk8s.cn/google-containers/cluster-proportional-autoscaler-{{ image_arch }}"
 dnsautoscaler_image_tag: "{{ dnsautoscaler_version }}"
 test_image_repo: docker.io/busybox
 test_image_tag: latest
@@ -337,7 +337,7 @@ cert_manager_version: "v0.5.2"
 cert_manager_controller_image_repo: "quay.io/jetstack/cert-manager-controller"
 cert_manager_controller_image_tag: "{{ cert_manager_version }}"
 addon_resizer_version: "1.8.3"
-addon_resizer_image_repo: "k8s.gcr.azk8s.cn/addon-resizer"
+addon_resizer_image_repo: "gcr.azk8s.cn/google-containers/addon-resizer"
 addon_resizer_image_tag: "{{ addon_resizer_version }}"
 
 dashboard_image_repo: "gcr.azk8s.cn/google_containers/kubernetes-dashboard-{{ image_arch }}"
